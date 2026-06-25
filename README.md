@@ -7,3 +7,4 @@
 * The source code
 * An Arduino Uno
 * MG996R 55g Metal Gear Torque Digital Servo Motor
+* Adafruit SSD1306 Arduino Library (Display)
