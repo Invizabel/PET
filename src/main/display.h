@@ -6,13 +6,12 @@ void myDisplay()
   unsigned long myMinutes = round(counter / 60 - (myHours * 60));
 
   display.clearDisplay();
+  display.setTextColor(WHITE);
   display.setTextSize(1);
   display.setCursor(10, 20);
 
-  char buffer[6];
-  strcpy(buffer, (char *) myHours);
-  strcpy(buffer + strlen(buffer), ":");
-  strcpy(buffer + strlen(buffer), (char *) myHours);
+  char buffer[16];
+  snprintf(buffer, sizeof(buffer), "%02lu:%02lu", myHours, myMinutes);
     
   display.print(buffer);
   display.display();
