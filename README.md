@@ -12,6 +12,12 @@
 * 3x four pronged buttons 12x12x7.3 mm
 * Adafruit SSD1306 Arduino Library (Display)
 
+#### 3D Printer Files:
+###### Door, Servo Horn, and Servo Mount:
+* Rafts: No
+* Supports: Yes
+* Resolution: 0.2
+* Infill:50%
 
 #### Instructions:
 ###### Breadboard Wiring:
