@@ -1,5 +1,5 @@
 // Docs: https://docs.arduino.cc/tutorials/generic/basic-servo-control/
-#include "display.h"
+#include "controls.h"
 
 void setup()
 {
@@ -10,8 +10,11 @@ void setup()
   
   display.begin(SSD1306_SWITCHCAPVCC, 0x3C);
   display.display();
+
+  pinMode(button1, INPUT_PULLUP);
+  pinMode(button2, INPUT_PULLUP);
   
-  delay(500);
+  delay(1000);
 }
 
 void loop()
@@ -34,4 +37,6 @@ void loop()
     
     myDisplay();
   }
+
+  myControls();
 }

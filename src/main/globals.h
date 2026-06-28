@@ -24,3 +24,16 @@ unsigned long secondsToHours = 3600;
 
 // Declare the display and set its size
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, -1);
+
+// Buttons
+const int button1 = 2;
+const int button2 = 3;
+
+// Interval feeding hours
+unsigned long intervalHours = 12;
+
+// Guarantee increment buttons by one
+bool currentState1;
+bool currentState2;
+bool lastState1;
+bool lastState2;
